@@ -2,11 +2,16 @@
 
 set -xe
 
-apt-get update
-apt-get install zsh git htop -y
-apt-get install build-essential python-dev libffi-dev libssl-dev -y
+sudo apt-get update && sudo apt-get install -y \
+  # build dependencies
+  build-essential python-dev libffi-dev libssl-dev \
+  # 
+  zsh git htop \
 
-curl https://bootstrap.pypa.io/get-pip.py | python
-pip install -U "requests[security]"
+# install latest versin of pip
+curl https://bootstrap.pypa.io/get-pip.py | sudo python
+# install some python libraries
+sudo pip install -U "requests[security]" httpie virtualenv
 
+# install oh-my-zsh (without sudo!)
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
