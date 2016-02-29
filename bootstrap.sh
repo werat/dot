@@ -1,5 +1,9 @@
-apt-get install zsh htop
-apt-get install build-essential python-dev libffi-dev libssl-dev
+#!/usr/bin/env bash
+
+set -xe
+
+apt-get install zsh htop -y
+apt-get install build-essential python-dev libffi-dev libssl-dev -y
 
 curl https://bootstrap.pypa.io/get-pip.py | python
 pip install -U "requests[security]"
