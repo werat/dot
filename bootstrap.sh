@@ -2,6 +2,7 @@
 
 set -xe
 
+apt-get update
 apt-get install zsh git htop -y
 apt-get install build-essential python-dev libffi-dev libssl-dev -y
 
