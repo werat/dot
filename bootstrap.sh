@@ -2,7 +2,7 @@
 
 set -xe
 
-apt-get install zsh htop -y
+apt-get install zsh git htop -y
 apt-get install build-essential python-dev libffi-dev libssl-dev -y
 
 curl https://bootstrap.pypa.io/get-pip.py | python
