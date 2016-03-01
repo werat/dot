@@ -5,6 +5,7 @@ set -xe
 sudo apt-get update && sudo apt-get install -y \
   # build dependencies
   build-essential python-dev libffi-dev libssl-dev \
+  libxml2-dev libxslt-dev \
   # 
   zsh git htop \
 
