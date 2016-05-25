@@ -1,0 +1,61 @@
+{
+	"color_scheme": "Packages/User/Lighthouse.tmTheme",
+	"default_line_ending": "unix",
+	"ensure_newline_at_eof_on_save": true,
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-workspace",
+		"*.sublime-project",
+		".*"
+	],
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		"__pycache__",
+		".*",
+		"*.egg-info"
+	],
+	"font_face": "Inconsolata",
+	"font_options":
+	[
+	],
+	"font_size": 12.7,
+	"ignored_packages":
+	[
+		"GitGutter",
+		"Modific",
+		"Python",
+		"Vintage"
+	],
+	"rulers":
+	[
+		120
+	],
+	"scroll_past_end": true,
+	"show_encoding": true,
+	"show_line_endings": true,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"vintage_start_in_command_mode": true,
+	"word_wrap": true
+}
