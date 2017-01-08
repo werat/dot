@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="avit-werat"
 
-plugins=(git brew common-aliases encode64 pip python)
+plugins=(git brew common-aliases encode64 python)
 
 source $ZSH/oh-my-zsh.sh
 
