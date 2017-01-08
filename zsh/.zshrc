@@ -1,20 +1,16 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/werat/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="avit-werat"
 
-ENABLE_CORRECTION="true"
+plugins=(git brew common-aliases encode64 pip python)
 
-COMPLETION_WAITING_DOTS="true"
-
-plugins=(git encode64 pip python)
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-  export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+eval `/usr/libexec/path_helper -s`
 # export MANPATH="/usr/local/man:$MANPATH"
-
-source $ZSH/oh-my-zsh.sh
 
 #   extract:  Extract most know archives with one command
 #   ---------------------------------------------------------
@@ -39,10 +35,24 @@ extract () {
      fi
 }
 
+# You may need to manually set your language environment
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+alias l="ls -FGhp"
+alias la="ls -FGAhp"
+alias ll="ls -lFh"
+
+# disable comfirmations
+alias rm='rm'
+alias cp='cp'
+alias mv='mv'
+
 export EDITOR=vim
 export SVN_EDITOR=vim
 export GIT_EDITOR=vim
 
-alias l="ls -Fh"
-alias la="ls -aFh"
-alias ll="ls -lFh"
+export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
