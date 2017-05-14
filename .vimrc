@@ -9,3 +9,4 @@ set wrap
 set nu
 
 set ai
+set t_Co=16
