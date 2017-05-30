@@ -41,8 +41,8 @@ export LC_ALL=en_US.UTF-8
 
 alias l="ls -FGhp"
 alias la="ls -FGAhp"
-alias ll="ls -lFh"
-alias lla="ls -lAFh"
+alias ll="ls -lFGh"
+alias lla="ls -lAFGh"
 
 # disable comfirmations
 alias rm='rm'
