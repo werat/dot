@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=Telegram Desktop
+Comment=Official desktop version of Telegram messaging app
+TryExec=/home/werat/Applications/Telegram/Telegram
+Exec=/usr/bin/env LC_ALL=ru_RU.UTF8 /home/werat/Applications/Telegram/Telegram -- %u
+Icon=telegram
+Terminal=false
+StartupWMClass=TelegramDesktop
+Type=Application
+Categories=Network;InstantMessaging;Qt;
+MimeType=x-scheme-handler/tg;
+X-Desktop-File-Install-Version=0.23
