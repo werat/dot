@@ -53,7 +53,11 @@ export EDITOR=vim
 export SVN_EDITOR=vim
 export GIT_EDITOR=vim
 
+export GOPATH=$HOME/go
+
 export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
+
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
