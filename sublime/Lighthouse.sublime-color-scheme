@@ -443,6 +443,23 @@
             "name": "JavaScript Variables",
             "scope": "variable.other.readwrite.js, variable.other.object.js, variable.other.constant.js",
             "foreground": "var(base00)"
-        }
+        },
+
+        // Manual definitions for SublimePythonIDE
+        {
+            "name": "SublimePythonIDE Warning",
+            "scope": "sublimepythonide.mark.warning",
+            "foreground": "#EDBA00"
+        },
+        {
+            "name": "SublimePythonIDE Gutter Mark",
+            "scope": "sublimepythonide.gutter-mark",
+            "foreground": "#FFFFFF"
+        },
+        {
+            "name": "SublimePythonIDE Error",
+            "scope": "sublimepythonide.mark.error",
+            "foreground": "#DA2000"
+        },
     ]
 }
