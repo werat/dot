@@ -118,11 +118,6 @@
             "foreground": "var(green)"
         },
         {
-            "name": "Built-in constant",
-            "scope": "constant, constant.language, meta.preprocessor",
-            "foreground": "var(brownish)"
-        },
-        {
             "scope": "entity.name.section",
             "foreground": "var(orange)"
         },
@@ -133,7 +128,7 @@
         },
         {
             "name": "User-defined constant",
-            "scope": "constant.character, constant.other",
+            "scope": "constant.character",
             "foreground": "var(orange)"
         },
         {
@@ -346,11 +341,6 @@
             "scope": "keyword.control.ref.latex",
             "foreground": "var(cyan)"
         },
-        // {
-        //     "name": "Python: storage",
-        //     "scope": "storage.type.class.python, storage.type.function.python, storage.modifier.global.python",
-        //     "foreground": "var(green)"
-        // },
         {
             "name": "Python: Support.exception",
             "scope": "support.type.exception.python",
@@ -394,17 +384,17 @@
         {
             "name": "diff: deleted",
             "scope": "markup.deleted",
-            "foreground": "var(red)"
+            "foreground": "#D3201F"
         },
         {
             "name": "diff: changed",
             "scope": "markup.changed",
-            "foreground": "var(yellow)"
+            "foreground": "#BF3904"
         },
         {
             "name": "diff: inserted",
             "scope": "markup.inserted",
-            "foreground": "var(green)"
+            "foreground": "#219186"
         },
         {
             "name": "Warning",
