@@ -81,7 +81,7 @@
         },
         {
             "name": "Class",
-            "scope": "keyword.control.class, entity.name, entity.name.class, entity.name.type.class",
+            "scope": "keyword.control.class, entity.name.class, entity.name.type.class",
             "foreground": "var(blue)"
         },
         {
