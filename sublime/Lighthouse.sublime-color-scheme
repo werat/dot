@@ -80,24 +80,9 @@
             "foreground": "var(orange)"
         },
         {
-            "name": "Storage",
-            "scope": "storage",
-            "foreground": "var(green)"
-        },
-        {
-            "name": "Storage modifier",
-            "scope": "storage.modifier",
-            "foreground": "var(base01)"
-        },
-        {
             "name": "Class",
             "scope": "keyword.control.class, entity.name, entity.name.class, entity.name.type.class",
             "foreground": "var(blue)"
-        },
-        {
-            "name": "Inherited Class",
-            "scope": "entity.other.inherited-class",
-            "foreground": "var(yellow)"
         },
         {
             "name": "Attribute",
@@ -164,9 +149,14 @@
             "foreground": "var(red)"
         },
         {
-            "name": "Storage Type",
-            "scope": "storage.type",
-            "foreground": "var(brownish)"
+            "name": "Storage",
+            "scope": "storage",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Storage modifier",
+            "scope": "storage.type, storage.modifier",
+            "foreground": "var(better_green)"
         },
         {
             "name": "Storage Type",
@@ -362,11 +352,6 @@
             "name": "Shell: []",
             "scope": "punctuation.definition.logical-expression.shell",
             "foreground": "var(red)"
-        },
-        {
-            "name": "Storage",
-            "scope": "storage.modifier.c, storage.modifier.c++",
-            "foreground": "var(better_green)"
         },
         {
             "name": "Perl: functions",
