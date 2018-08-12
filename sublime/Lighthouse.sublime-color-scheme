@@ -21,7 +21,6 @@
         "gray":    "#E0E0E0",
 
         "violetish":    "#9F4FB3",
-        "brownish":     "#A57800",
         "greenish":     "#748B00",
         "cyanish":      "#269186",
     },
@@ -103,11 +102,6 @@
             "foreground": "var(base1)"
         },
         {
-            "name": "Library class",
-            "scope": "support, support.type, support.class",
-            "foreground": "var(brownish)"
-        },
-        {
             "name": "Function name",
             "scope": "entity.name.function",
             "foreground": "var(violetish)"
@@ -143,7 +137,7 @@
         },
         {
             "name": "Library function",
-            "scope": "support.function",
+            "scope": "support.type, support.class, support.function",
             "foreground": "var(blue)"
         },
         {
