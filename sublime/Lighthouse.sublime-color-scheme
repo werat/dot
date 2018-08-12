@@ -21,8 +21,11 @@
         "gray":    "#E0E0E0",
 
         "violetish":    "#9F4FB3",
+        "brownish":     "#A57800",
         "greenish":     "#748B00",
         "cyanish":      "#269186",
+
+        "better_green": "#219186",
     },
     "globals":
     {
@@ -126,6 +129,11 @@
             "foreground": "var(orange)"
         },
         {
+            "name": "User-defined constant",
+            "scope": "constant.language",
+            "foreground": "var(brownish)"
+        },
+        {
             "name": "Tag name",
             "scope": "entity.name.tag",
             "foreground": "var(blue)"
@@ -137,8 +145,18 @@
         },
         {
             "name": "Library function",
-            "scope": "support.type, support.class, support.function",
+            "scope": "support.function",
             "foreground": "var(blue)"
+        },
+        {
+            "name": "Library function",
+            "scope": "support.type, support.class",
+            "foreground": "var(brownish)"
+        },
+        {
+            "name": "Exception",
+            "scope": "support.type.exception",
+            "foreground": "var(orange)"
         },
         {
             "name": "Continuation",
@@ -148,12 +166,12 @@
         {
             "name": "Storage Type",
             "scope": "storage.type",
-            "foreground": "var(greenish)"
+            "foreground": "var(brownish)"
         },
         {
-            "name": "Exception",
-            "scope": "support.type.exception",
-            "foreground": "var(orange)"
+            "name": "Storage Type",
+            "scope": "storage.type.class, storage.type.function",
+            "foreground": "var(green)"
         },
         {
             "name": "Special",
@@ -168,22 +186,12 @@
         {
             "name": "Quoted String",
             "scope": "string.quoted.double, string.quoted.single",
-            "foreground": "var(cyan)"
+            "foreground": "var(cyanish)"
         },
         {
             "name": "Quotes",
             "scope": "punctuation.definition.string",
-            "foreground": "var(base00)"
-        },
-        {
-            "name": "[]",
-            "scope": "meta.brace.square, punctuation.section.brackets",
-            "foreground": "var(base00)"
-        },
-        {
-            "name": "(),{}",
-            "scope": "meta.brace.round, meta.brace.curly, punctuation.section, punctuation.section.block, punctuation.definition.parameters, punctuation.section.group",
-            "foreground": "var(base00)"
+            "foreground": "#839496"
         },
         {
             "name": "CSS: Standard color value",
@@ -357,8 +365,8 @@
         },
         {
             "name": "Storage",
-            "scope": "storage.modifier.c++",
-            "foreground": "var(green)"
+            "scope": "storage.modifier.c, storage.modifier.c++",
+            "foreground": "var(better_green)"
         },
         {
             "name": "Perl: functions",
@@ -378,7 +386,7 @@
         {
             "name": "diff: deleted",
             "scope": "markup.deleted",
-            "foreground": "#D3201F"
+            "foreground": "var(red)"
         },
         {
             "name": "diff: changed",
@@ -388,7 +396,7 @@
         {
             "name": "diff: inserted",
             "scope": "markup.inserted",
-            "foreground": "#219186"
+            "foreground": "var(better_green)"
         },
         {
             "name": "Warning",
