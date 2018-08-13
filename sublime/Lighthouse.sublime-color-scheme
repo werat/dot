@@ -21,11 +21,9 @@
         "gray":    "#E0E0E0",
 
         "violetish":    "#9F4FB3",
+        "yellowish":    "#748B00",
         "brownish":     "#A57800",
-        "greenish":     "#748B00",
-        "cyanish":      "#269186",
-
-        "better_green": "#219186",
+        "greenish":     "#269186",
     },
     "globals":
     {
@@ -47,12 +45,17 @@
         {
             "name": "String",
             "scope": "string",
-            "foreground": "var(cyan)"
+            "foreground": "var(greenish)"
+        },
+        {
+            "name": "Quoted String",
+            "scope": "string.quoted.docstring",
+            "foreground": "#536871"
         },
         {
             "name": "Regexp",
             "scope": "string.regexp",
-            "foreground": "var(cyan)"
+            "foreground": "var(orange)"
         },
         {
             "name": "Escape \\ char",
@@ -139,11 +142,6 @@
             "foreground": "var(brownish)"
         },
         {
-            "name": "Exception",
-            "scope": "support.type.exception",
-            "foreground": "var(orange)"
-        },
-        {
             "name": "Continuation",
             "scope": "punctuation.separator.continuation",
             "foreground": "var(red)"
@@ -154,14 +152,14 @@
             "foreground": "var(green)"
         },
         {
-            "name": "Storage modifier",
-            "scope": "storage.type, storage.modifier",
-            "foreground": "var(better_green)"
+            "name": "Storage type and modifier",
+            "scope": "storage.modifier, storage.type, storage.type.function.lambda",
+            "foreground": "#008080"
         },
         {
-            "name": "Storage Type",
+            "name": "Storage type class and function",
             "scope": "storage.type.class, storage.type.function",
-            "foreground": "var(green)"
+            "foreground": "var(yellowish)"
         },
         {
             "name": "Special",
@@ -172,11 +170,6 @@
             "name": "Invalid",
             "scope": "invalid",
             "background": "color(var(red) blend(var(base3) 30%))"
-        },
-        {
-            "name": "Quoted String",
-            "scope": "string.quoted.double, string.quoted.single",
-            "foreground": "var(cyanish)"
         },
         {
             "name": "Quotes",
@@ -334,11 +327,6 @@
             "foreground": "var(cyan)"
         },
         {
-            "name": "Python: Support.exception",
-            "scope": "support.type.exception.python",
-            "foreground": "var(yellow)"
-        },
-        {
             "name": "Shell: meta scope in loop",
             "scope": "meta.scope.for-in-loop.shell, variable.other.loop.shell",
             "foreground": "var(base01)"
@@ -381,7 +369,7 @@
         {
             "name": "diff: inserted",
             "scope": "markup.inserted",
-            "foreground": "var(better_green)"
+            "foreground": "var(greenish)"
         },
         {
             "name": "Warning",
