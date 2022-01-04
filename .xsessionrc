@@ -1,8 +1,0 @@
-# List all available input devices, look for something like "AlpsPS/2 ALPS DualPoint Stick". Remember it's id.
-# xinput --list
-
-# List properties for this device, look for something like Speed or Acceleration
-# xinput --list-props 13
-
-# Set appropriate value
-xinput --set-prop "13" "libinput Accel Speed" -0.75
