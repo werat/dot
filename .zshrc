@@ -13,6 +13,9 @@ then
   FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 fi
 
+# Enable tab-style select of menu items (cd, flags suggestions)
+zstyle ':completion:*' menu select
+
 # Complete all things!
 autoload -Uz compinit && compinit
 
