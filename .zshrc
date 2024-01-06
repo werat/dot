@@ -25,5 +25,9 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Better ^w
 local WORDCHARS=''
 
+# WTF is this, neede for mosh
+# http://pesin.space/posts/2020-10-05-mosh-macos/
+export LANG=en_US.UTF-8 LC_CTYPE=en_US.UTF-8
+
 # Start the starship!
 eval "$(starship init zsh)"
